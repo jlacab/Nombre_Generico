@@ -16,6 +16,76 @@ body
   height: 200px;
 }
 
+#menu
+{
+  margin:0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+  position: relative;
+  top: -64px;
+  width: 100%;
+
+}
+
+#menu ul
+{
+  list-style-type: none;
+}
+
+#menu li
+{
+  float:left;
+}
+
+#menu li a
+{
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#menu li a:hover
+{
+  background-color: grey;
+}
+
+#menu .active
+{
+  background-color: yellow;
+}
+
+#menu li ul li
+{
+  display: none;
+  position: absolute;
+  position: fixed;
+  background-color: #d1d1d1;
+}
+
+#menu li:hover ul li
+{
+  display: block;
+}
+
+#menu li ul li a
+{
+  width: 87px;
+}
+
+#menu li ul li:nth-child(2)
+{
+  margin-top: 46px;
+}
+
+#menu li ul li:nth-child(3)
+{
+  margin-top: 92px;
+}
+
+
 #foot
 {
   background-color: #555555;
