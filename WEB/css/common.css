@@ -8,7 +8,6 @@ body
 {
   background-color: #a8c9ff;
 }
-
 #header
 {
   background-color: yellow;
@@ -48,10 +47,61 @@ body
 {
   color:black;
 }
+#menu{
+  position: relative;
+  margin-left: 10%;
+  margin-right: 30%;
+  text-align: center;
+  font-family: 'Jura', sans-serif;  font-weight: 450;
+  border-top: Black solid 5px;
+  border-bottom: Black solid 3px;
+  margin-top: 20px;
+  z-index: 2;
+  width: 80%;
+}
+#menu a{
+  text-decoration:none;
+  color:inherit;
+  font-size:14px;
+  color: gray;
+}
+#menu li{
+  width:150px;
+  height:25px;
+  position:relative;
+  padding:5px 10px;
+  display:inline-block;
+  text-align:center;
+  color:#fff;
+}
+#menu li>ul{
+  display:none;
+}
+#menu li:hover>ul{
+  top:35px;
+  left:-3px;
+  background-color: black;
+  display:block;
+  position:absolute;
+  border: #816655 3px solid;
+  border-top: #563B29 3px solid;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+#menu .active{
+  background-color: #40332B;
+}
+#body{
+  height: 1000px;
+}
 
 .socialIcons
 {
   width:20px;
   height: 20px;
   margin: 3px;
+}
+.logo{
+  width: 200px;
+  height: 200px;
 }
