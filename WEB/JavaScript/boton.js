@@ -1,22 +1,25 @@
-const button = document.getElementById("runaway-btn");
+<script id="rendered-js">
+  const button = document.getElementById("runaway-btn");
 
-const animateMove = (element, prop, pixels) =>
+  const animateMove = (element, prop, pixels) =>
   anime({
     targets: element,
     [prop]: `${pixels}px`,
-    easing: "easeOutCirc"
+    easing: "easeOutCirc" });
+
+
+  ["mouseover", "click"].forEach(function (el) {
+    button.addEventListener(el, function (event) {
+      const top = getRandomNumber(window.innerHeight - this.offsetHeight);
+      const left = getRandomNumber(window.innerWidth - this.offsetWidth);
+
+      animateMove(this, "left", left).play();
+      animateMove(this, "top", top).play();
+    });
   });
 
-["mouseover", "click"].forEach(function (el) {
-  button.addEventListener(el, function (event) {
-    const top = getRandomNumber(window.innerHeight - this.offsetHeight);
-    const left = getRandomNumber(window.innerWidth - this.offsetWidth);
-
-    animateMove(this, "left", left).play();
-    animateMove(this, "top", top).play();
-  });
-});
-
-const getRandomNumber = (num) => {
-  return Math.floor(Math.random() * (num + 1));
-};
+  const getRandomNumber = num => {
+    return Math.floor(Math.random() * (num + 1));
+  };
+  //# sourceURL=pen.js
+</script>

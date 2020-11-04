@@ -5,6 +5,7 @@
     <title>APPSMATU</title>
     <link rel="stylesheet" type="text/css" href="css/bingo.css">
     <link rel="stylesheet" type="text/css" href="css/common.css">
+
   </head>
   <body>
 
@@ -41,7 +42,43 @@
 
 
     <div id="body">
-      <button id='runaway-btn'>aki &#129315;</button>
+      <div id="trollbutton">
+        <button id="runaway-btn">Click Me</button>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
+        <script id="rendered-js">
+          const button = document.getElementById("runaway-btn");
+
+          const animateMove = (element, prop, pixels) =>
+          anime({
+            targets: element,
+            [prop]: `${pixels}px`,
+            easing: "easeOutCirc" });
+
+
+          ["mouseover", "click"].forEach(function (el) {
+            button.addEventListener(el, function (event) {
+              const top = getRandomNumber(window.innerHeight);
+              const left = getRandomNumber(window.innerWidth - 1430);
+
+
+              animateMove(this, "left", left).play();
+              animateMove(this, "top", top).play();
+            });
+          });
+
+          const getRandomNumber = num => {
+            return Math.floor(Math.random() * (num + 1)) + 300;
+          };
+
+        </script>
+      </div>
+
+
+
+
+
+
+
     </div>
 
 
