@@ -42,6 +42,13 @@
 
 
     <div id="body">
+
+      <h2>THE BINGO!</h2>
+      <p>One of our projets is the marvelous bingo! made in Java</p>
+      <br>
+      <p>Here is a screenshot of it...</p>
+      <img id="capbingo" src="images/bingotemp.jpg" alt="Here is a bingo screenshot">
+      <h3>You can download it here:</h3>
       <div id="trollbutton">
         <button id="runaway-btn">Click Me</button>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
@@ -57,8 +64,8 @@
 
           ["mouseover", "click"].forEach(function (el) {
             button.addEventListener(el, function (event) {
-              const top = getRandomNumber(window.innerHeight);
-              const left = getRandomNumber(window.innerWidth - 1430);
+              const top = getRandomNumber(window.innerHeight - 500);
+              const left = getRandomNumber(window.innerWidth - 500);
 
 
               animateMove(this, "left", left).play();
@@ -67,7 +74,7 @@
           });
 
           const getRandomNumber = num => {
-            return Math.floor(Math.random() * (num + 1)) + 300;
+            return Math.floor(Math.random() * (num + 1)) + 400;
           };
 
         </script>
