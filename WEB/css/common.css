@@ -66,16 +66,29 @@ body
 
 #foot
 {
-  background-color: yellow;
+  background-color: grey;
 }
 
-.socialIcons
+h2
 {
-  width:20px;
-  height: 20px;
-  margin: 3px;
+  margin-left: 0%;
+  margin-top: 0%;
 }
-.logo{
-  width: 200px;
-  height: 200px;
+
+#services
+{
+  text-align: left;
+  margin-top: 0%;
+}
+
+#contact
+{
+  margin-right: 20px;
+  margin-top: -13%;
+}
+
+#about
+{
+  text-align: right;
+
 }
