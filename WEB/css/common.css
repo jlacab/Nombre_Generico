@@ -13,10 +13,19 @@ body
 {
   background-color: yellow;
 }
-#body{
+
+#logo
+{
+  height: 200px;
+  width: 200px;
+}
+
+#body
+{
   color:black;
 }
-#menu{
+#menu
+{
   position: relative;
   margin-left: 10%;
   margin-right: 30%;
@@ -28,13 +37,15 @@ body
   z-index: 2;
   width: 80%;
 }
-#menu a{
+#menu a
+{
   text-decoration:none;
   color:inherit;
   font-size:14px;
   color: gray;
 }
-#menu li{
+#menu li
+{
   width:150px;
   height:25px;
   position:relative;
@@ -43,10 +54,12 @@ body
   text-align:center;
   color:#fff;
 }
-#menu li>ul{
+#menu li>ul
+{
   display:none;
 }
-#menu li:hover>ul{
+#menu li:hover>ul
+{
   top:35px;
   left:-3px;
   background-color: black;
@@ -57,10 +70,12 @@ body
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
 }
-#menu .active{
+#menu .active
+{
   background-color: #40332B;
 }
-#body{
+#body
+{
 
 }
 
