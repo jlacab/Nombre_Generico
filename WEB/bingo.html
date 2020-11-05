@@ -44,13 +44,14 @@
     <div id="body">
 
       <h2>THE BINGO!</h2>
-      <p>One of our projets is the marvelous bingo! made in Java</p>
+      <h3>One of our projets is the marvelous Bingo! made in Java</h3>
       <br>
       <p>Here is a screenshot of it...</p>
       <img id="capbingo" src="images/bingotemp.jpg" alt="Here is a bingo screenshot">
-      <h3>You can download it here:</h3>
+
       <div id="trollbutton">
-        <button id="runaway-btn">Click Me</button>
+        <p>You can download it <button id="runaway-btn">here:</button></p>
+
         <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
         <script id="rendered-js">
           const button = document.getElementById("runaway-btn");
@@ -64,7 +65,7 @@
 
           ["mouseover", "click"].forEach(function (el) {
             button.addEventListener(el, function (event) {
-              const top = getRandomNumber(window.innerHeight - 500);
+              const top = getRandomNumber(window.innerHeight - 400);
               const left = getRandomNumber(window.innerWidth - 500);
 
 
