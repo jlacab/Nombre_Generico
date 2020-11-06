@@ -5,20 +5,42 @@
   user-select: none;
 }
 
-body {
+h3
+{
+  font-size: 25px;
+}
+
+h4
+{
+  font-size: 20px;
+}
+
+body
+{
   background-color: rgb(31, 31, 31);
 }
 
-button {
+button
+{
   position: absolute;
-  top: 500px;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-21%, -20%);
   height: 4rem;
   width: 10rem;
-  font-size: 1.5rem;
-  border-radius: 5px;
+  font-size: 2rem;
   border: none;
-  box-shadow: 1px 1px 5px black;
-  background-color: white;
+  background-color: transparent;
+  color: blue;
+  text-decoration: underline;
+}
+
+#trollbutton
+{
+  height: 140px;
+  font-size: 35px;
+  margin-left: -50px;
+}
+
+#kkita
+{
+  text-align: center;
 }

@@ -42,44 +42,47 @@
 
 
     <div id="body">
+      <div id="kkita">
+        <h2>THE BINGO!</h2>
+        <h3>One of our projets is the marvelous bingo! made in Java</h3>
+        <br>
+        <h4>Here is a screenshot of it...</h4>
+        <img id="capbingo" src="images/bingotemp.jpg" alt="Here is a bingo screenshot">
+        <div id="trollbutton">
+          <p>You can download it <button id="runaway-btn">here:</button></p>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
+          <script id="rendered-js">
+            const button = document.getElementById("runaway-btn");
 
-      <h2>THE BINGO!</h2>
-      <p>One of our projets is the marvelous bingo! made in Java</p>
-      <br>
-      <p>Here is a screenshot of it...</p>
-      <img id="capbingo" src="images/bingotemp.jpg" alt="Here is a bingo screenshot">
-      <h3>You can download it here:</h3>
-      <div id="trollbutton">
-        <button id="runaway-btn">Click Me</button>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
-        <script id="rendered-js">
-          const button = document.getElementById("runaway-btn");
-
-          const animateMove = (element, prop, pixels) =>
-          anime({
-            targets: element,
-            [prop]: `${pixels}px`,
-            easing: "easeOutCirc" });
-
-
-          ["mouseover", "click"].forEach(function (el) {
-            button.addEventListener(el, function (event) {
-              const top = getRandomNumber(window.innerHeight - 500);
-              const left = getRandomNumber(window.innerWidth - 500);
+            const animateMove = (element, prop, pixels) =>
+            anime({
+              targets: element,
+              [prop]: `${pixels}px`,
+              easing: "easeOutCirc" });
 
 
-              animateMove(this, "left", left).play();
-              animateMove(this, "top", top).play();
+            ["mouseover", "click"].forEach(function (el) {
+              button.addEventListener(el, function (event) {
+                const top = getHeightRandomNumber(window.innerHeight - 300);
+                const left = getRandomNumber(window.innerWidth - 100);
+
+
+                animateMove(this, "left", left).play();
+                animateMove(this, "top", top).play();
+              });
             });
-          });
 
-          const getRandomNumber = num => {
-            return Math.floor(Math.random() * (num + 1)) + 400;
-          };
+            const getHeightRandomNumber = num => {
+              return Math.floor(Math.random() * (num + 1)) + 400;
+            };
 
-        </script>
+            const getRandomNumber = num => {
+              return Math.floor(Math.random() * (num + 1));
+            };
+
+          </script>
+        </div>
       </div>
-
 
 
 
@@ -90,13 +93,31 @@
 
 
     <div id="foot">
-      <div id="socials">
-        <span>Follow us on our social media!</span>
-        <a href="http://www.facebook.com"><img class="socialIcons" src="images/facebook.png"/></a>
-        <a href="http://twitter.com"><img class="socialIcons" src="images/twitter.png"/></a>
-        <a href="http://instagram.com"><img class="socialIcons" src="images/instagram.png"/></a>
-        <a href="http://www.tiktok.com"><img class="socialIcons" src="images/tiktok.png"/></a>
+      <div id="services">
+        <h2>Products and Services</h2>
+          <br><a href="Databases.html">Databases</a></br>
+          <br><a href="Websites.html">Websites</a></br>
+          <br><a href="Javaprojects.html">Java Projects</a></br>
+          <br><a href="OS.html">Installation and configuration of OS</a></br>
       </div>
+      <div id="contact">
+        <h2>Contact Us</h2>
+          <br><p>Contact</p></br>
+          <p>944 10 38 37</p>
+          <p>nominaciongenerica@gmail.com</p>
+      </div>
+      <div id="about">
+        <h2>About Us</h2>
+          <br><p>Desde 1990  dando soporte en comunicaciones
+          abordando con calidad y cercanía cualquier
+          proyecto empresarial. Nuestra experiencia
+          nos permite ofrecer las mejores soluciones
+          para  el crecimiento y expansión de proyectos
+          empresariales tanto incipientes, como aquellos
+          cuyo desarrollo necesita de mejoras en los
+          procesos.</p></br>
+      </div>
+
     </div>
 
 
