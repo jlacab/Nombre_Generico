@@ -1,0 +1,16 @@
+.sign
+{
+  height: 700px;
+  text-align: center;
+  font-size: 30px;
+}
+
+#formulario
+{
+  text-align: center;
+  width: 380px;
+  border: solid;
+  border-radius: 15px;
+  margin-left: 35.5%;
+  background-color: yellow;
+}

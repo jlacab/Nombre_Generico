@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>APPSMATU</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/signin.css">
     <link rel="stylesheet" type="text/css" href="css/common.css">
   </head>
   <body>
@@ -38,12 +38,22 @@
     </div>
 
     <div id="body">
-      <ul class="galeria">
-        <img src="images/basesdatos.jpg" alt="basesdatos" class="imgGaleria">
-        <img src="images/website.jpg" alt="website" class="imgGaleria">
-        <img src="images/java.jpg" alt="java" class="imgGaleria">
-        <img src="images/OS.jpg" alt="OS" class="imgGaleria">
-      </ul>
+
+      <div class="sign">
+        <h2>Log in:</h2>
+        <form id="formulario">
+
+          <h3 id="nick">Username & Password</h3>
+          <br/>
+          <label for="name">Username</label>
+          <input type="text" name="nick" value="">
+          <br/>
+          <label for="name">Password</label>
+          <input type="password" name="passwd" value="">
+          <input type="submit" id="send" value="Send"/>
+        </form>
+      </div>
+
     </div>
 
     <div id="foot">

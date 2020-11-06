@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>APPSMATU</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/signin.css">
     <link rel="stylesheet" type="text/css" href="css/common.css">
   </head>
   <body>
@@ -38,12 +38,48 @@
     </div>
 
     <div id="body">
-      <ul class="galeria">
-        <img src="images/basesdatos.jpg" alt="basesdatos" class="imgGaleria">
-        <img src="images/website.jpg" alt="website" class="imgGaleria">
-        <img src="images/java.jpg" alt="java" class="imgGaleria">
-        <img src="images/OS.jpg" alt="OS" class="imgGaleria">
-      </ul>
+
+      <div class="sign">
+        <h2>Sign in:</h2>
+        <form id="formulario">
+
+          <h3 id="personal">Personal Data</h3>
+          <br/>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="Name" value=""/>
+          <br/>
+          <label for="surname1">1st Surname</label>
+          <input type="text" id="sur1" name="surname1" value=""/>
+          <br/>
+          <label for="surname2">2nd Surname</label>
+          <input type="text" id="sur2" name="surname2" value=""/>
+          <br/>
+          <label for="email">Email</label>
+          <input type="email" name="mail" value=""/>
+          <br/>
+          <label for="birthdate">Birth date</label>
+          <input type="date" name="birth" value="">
+          <br/>
+
+          <label form="Sex" style="margin-left: -8%;">Sex:</label>
+          <select name="Sex">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+            <option value="notsay">I prefer not to say it</option>
+          </select>
+          <br/>
+          <h3 id="nick">Username & Password</h3>
+          <br/>
+          <label for="name">Username</label>
+          <input type="text" name="nick" value="">
+          <br/>
+          <label for="name">Password</label>
+          <input type="password" name="passwd" value="">
+          <input type="submit" id="send" value="Send"/>
+        </form>
+      </div>
+
     </div>
 
     <div id="foot">
