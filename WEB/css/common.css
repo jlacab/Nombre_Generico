@@ -3,29 +3,37 @@
   padding:0px;
   margin:0px;
 }
+
+h1
+{
+  position: relative;
+  text-align: center;
+  font-size: 50px;
+  top:50px;
+}
 body
 {
-  background-color: #a8c9ff;
-
-}
-
-#header
-{
-  background-color: yellow;
+  background-color: #81a8e6;
 }
 
 .logo
 {
-  height: 200px;
-  width: 200px;
+  width: 100px;
+  height: 100px;
+  margin-left: 93%;
+  margin-top: -2%;
+}
+#header
+{
+  background-color: #81a8e6;
 }
 
-#body
-{
+#body{
   color:black;
 }
-#menu
-{
+
+#menu{
+  background-color: yellow;
   position: relative;
   margin-left: 10%;
   margin-right: 30%;
@@ -37,15 +45,13 @@ body
   z-index: 2;
   width: 80%;
 }
-#menu a
-{
+#menu a{
   text-decoration:none;
   color:inherit;
   font-size:14px;
   color: gray;
 }
-#menu li
-{
+#menu li{
   width:150px;
   height:25px;
   position:relative;
@@ -54,13 +60,11 @@ body
   text-align:center;
   color:#fff;
 }
-#menu li>ul
-{
+#menu li>ul{
   display:none;
 }
-#menu li:hover>ul
-{
-  top:25px;
+#menu li:hover>ul{
+  top:35px;
   left:-3px;
   background-color: black;
   display:block;
@@ -70,40 +74,38 @@ body
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
 }
-#menu .active
-{
+#menu .active{
   background-color: #40332B;
-}
-#body
-{
-
-}
-
-#foot
-{
-  background-color: grey;
 }
 
 h2
 {
-  margin-left: 0%;
-  margin-top: 0%;
+  color: #274f99
+}
+
+#foot
+{
+  background-color: #a6abb3;
+  width: 100%;
+  height: 230.233px;
 }
 
 #services
 {
-  text-align: left;
+
+  margin-left: 5%;
   margin-top: 0%;
 }
 
 #contact
 {
-  margin-right: 20px;
-  margin-top: -13%;
+  margin-left: 30%;
+  margin-top: -12.2%;
 }
 
 #about
 {
-  text-align: right;
-
+  text-align: center;
+  margin-left: 52%;
+  margin-top: -8%;
 }
