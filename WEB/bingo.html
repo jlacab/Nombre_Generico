@@ -43,44 +43,51 @@
 
     <div id="body">
 
-      <h2>THE BINGO!</h2>
-      <h3>One of our projets is the marvelous Bingo! made in Java</h3>
-      <br>
-      <p>Here is a screenshot of it...</p>
-      <img id="capbingo" src="images/bingotemp.jpg" alt="Here is a bingo screenshot">
-
-      <div id="trollbutton">
-        <p>You can download it <button id="runaway-btn">here:</button></p>
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
-        <script id="rendered-js">
-          const button = document.getElementById("runaway-btn");
-
-          const animateMove = (element, prop, pixels) =>
-          anime({
-            targets: element,
-            [prop]: `${pixels}px`,
-            easing: "easeOutCirc" });
+      <div id="kkita">
 
 
-          ["mouseover", "click"].forEach(function (el) {
-            button.addEventListener(el, function (event) {
-              const top = getRandomNumber(window.innerHeight - 400);
-              const left = getRandomNumber(window.innerWidth - 500);
+        <h2 class="proyect">THE BINGO!</h2>
+        <h3>One of our projets is the marvelous Bingo! made in Java</h3>
+        <br>
+        <p>Here is a screenshot of it...</p>
+        <img id="capbingo" src="images/bingotemp.jpg" alt="Here is a bingo screenshot">
+
+        <div id="trollbutton">
+          <p>You can download it <button id="runaway-btn">here:</button></p>
+
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
+          <script id="rendered-js">
+            const button = document.getElementById("runaway-btn");
+
+            const animateMove = (element, prop, pixels) =>
+            anime({
+              targets: element,
+              [prop]: `${pixels}px`,
+              easing: "easeOutCirc" });
 
 
-              animateMove(this, "left", left).play();
-              animateMove(this, "top", top).play();
+            ["mouseover", "click"].forEach(function (el) {
+              button.addEventListener(el, function (event) {
+                const top = getHeightRandomNumber(window.innerHeight - 200);
+                const left = getRandomNumber(window.innerWidth - 100);
+
+
+                animateMove(this, "left", left).play();
+                animateMove(this, "top", top).play();
+              });
             });
-          });
 
-          const getRandomNumber = num => {
-            return Math.floor(Math.random() * (num + 1)) + 400;
-          };
+            const getHeightRandomNumber = num => {
+              return Math.floor(Math.random() * (num + 1)) + 400;
+            };
 
-        </script>
+            const getRandomNumber = num => {
+              return Math.floor(Math.random() * (num + 1));
+            };
+
+          </script>
+        </div>
       </div>
-
 
 
 
