@@ -1,9 +1,18 @@
 #body
 {
   text-align: center;
+  font-size: 25px;
+  color: #03d3fc !important;
 }
 
 #title
 {
   font-size: 50px;
+}
+
+.img
+{
+  height: 200px;
+  width: 200px;
+  border-radius: 65px;
 }
