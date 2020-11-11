@@ -10,8 +10,9 @@
   font-size: 50px;
 }
 
-
 #img
 {
+  height: 200px;
+  width: 200px;
   border-radius: 100px;
 }
