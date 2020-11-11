@@ -19,6 +19,11 @@ body
   background-color: rgb(31, 31, 31);
 }
 
+#body
+{
+  color: #cbecff;
+}
+
 button
 {
   position: absolute;
@@ -28,7 +33,7 @@ button
   font-size: 2rem;
   border: none;
   background-color: transparent;
-  color: blue;
+  color: #03d3fc;
   text-decoration: underline;
 }
 
@@ -42,4 +47,5 @@ button
 #kkita
 {
   text-align: center;
+  color: #cbecff;
 }
