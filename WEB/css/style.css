@@ -1,5 +1,53 @@
-.imgGaleria
+ul.slider
 {
-  width: 352px;
-  height: 350px;
+  height: 375px;
+  width: 562px;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+  list-style-type: none;
+  overflow: hidden;
+}
+
+ul.slider li
+{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+ul.slider li img
+{
+  display: block;
+  height: 375px;
+  width: 562px;
+}
+
+ul.slider li::after
+{
+  content: '';
+  height: 10px;
+  width: 0%;
+  position: absolute;
+  bottom: 0;
+  left:0;
+  transition: width 1.5s linear;
+  -moz-transition: width 1.5s linear;
+  -webkit-transition: width 1.5s linear;
+}
+
+ul.slider li:hover
+{
+  margin: 100000000px;
+  transition: margin .1s linear 1.5s;
+}
+ul.slider li:hover~li
+{
+  display: none;
+}
+ul.slider li:hover:after
+{
+  width: 100%;
 }
