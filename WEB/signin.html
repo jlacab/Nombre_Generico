@@ -46,37 +46,31 @@
 
           <h3 id="personal">Personal Data</h3>
           <br/>
-          <label for="name">Name</label>
-          <input type="text" id="name" name="Name" value=""/>
+          <input type="text" class="block" name="Name" placeholder="Name"/>
           <br/>
-          <label for="surname1">1st Surname</label>
-          <input type="text" id="sur1" name="surname1" value=""/>
+          <input type="text" class="block" name="surname1" placeholder="First Surname"/>
           <br/>
-          <label for="surname2">2nd Surname</label>
-          <input type="text" id="sur2" name="surname2" value=""/>
+          <input type="text" class="block" name="surname2" placeholder="Second Surname"/>
           <br/>
-          <label for="email">Email</label>
-          <input type="email" name="mail" value=""/>
+          <input type="email" class="block" name="mail" placeholder="Email"/>
           <br/>
-          <label for="birthdate">Birth date</label>
-          <input type="date" name="birth" value="">
+          <label id="date" for="birthdate">Birth Date:</label>
+          <br/>
+          <input type="date" id="birth" name="birth" value="">
           <br/>
 
-          <label form="Sex" style="margin-left: -8%;">Sex:</label>
-          <select name="Sex">
+          <label id="gender" form="Sex">Gender:</label>
+          <br/>
+          <select name="Sex" id="sex" placehorde="Sex">
             <option value="male">Male</option>
             <option value="female">Female</option>
             <option value="other">Other</option>
             <option value="notsay">I prefer not to say it</option>
           </select>
           <br/>
-          <h3 id="nick">Username & Password</h3>
+          <input type="text" class="block" name="nick" placeholder="Username">
           <br/>
-          <label for="name">Username</label>
-          <input type="text" name="nick" value="">
-          <br/>
-          <label for="name">Password</label>
-          <input type="password" name="passwd" value="">
+          <input type="password" class="block" name="passwd" placeholder="password">
           <br>
           <input type="submit" id="send" value="Send"/>
         </form>
