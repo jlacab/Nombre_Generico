@@ -30,6 +30,9 @@ body
   margin-left: 93%;
   margin-top: -2%;
 }
+.floatclear{
+  clear: left;
+}
 #header
 {
 }
@@ -99,28 +102,27 @@ h2
   border-radius: 15px;
   margin-top: 2%;
   font-family: 'Ubuntu', sans-serif;
+  padding: 1%;
 }
-
-#services
-{
-
-  margin-right: 0%;
-  margin-top: 1%;
-  margin-left: 3%;
+#services{
+  float: left;
+  padding: 2%;
+  padding-top: 0.5%;
+  margin-left: 6%;
 }
-
-#contact
-{
-  margin-left: 35%;
-  margin-top: -12.2%;
+#contact{
+  float: left;
+  padding: 2%;
+  margin-left: 10%;
+  padding-top: 0.5%;
 }
-
-#about
-{
-  text-align: center;
-  margin-left: 60%;
-  margin-top: -8%;
-  margin-right: 4%;
+#about{
+  float: left;
+  padding: 2%;
+  width: 30%;
+  text-align: right;
+  padding-top: 0.5%;
+  margin-right: 5%;
 }
 #finLista{
   border-bottom-left-radius: 15px;
