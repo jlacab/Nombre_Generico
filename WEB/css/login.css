@@ -1,0 +1,37 @@
+.sign
+{
+  height: 700px;
+  text-align: center;
+  font-size: 28px;
+}
+
+#formulario
+{
+  margin-top: 20px;
+  text-align: center;
+  width: 400px;
+  border: solid;
+  border-radius: 15px;
+  margin-left: 35.5%;
+  background-color: #cbecff;
+}
+
+h3
+{
+  margin-top:15px;
+}
+
+#send
+{
+  height: 40px;
+  width: 100px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  border-radius: 15px;
+  background-color: #2a6fdb;
+}
+
+#login1
+{
+  margin-left: 8px;
+}

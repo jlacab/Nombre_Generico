@@ -1,5 +1,6 @@
 .sign
 {
+  margin: 2px;
   height: 700px;
   text-align: center;
   font-size: 28px;
@@ -7,12 +8,18 @@
 
 #formulario
 {
+  margin-top: 20px;
   text-align: center;
-  width: 380px;
+  width: 570px;
   border: solid;
   border-radius: 15px;
-  margin-left: 35.5%;
+  margin-left: 29.5%;
   background-color: #cbecff;
+}
+
+h3
+{
+  margin-top:15px;
 }
 
 #send
@@ -23,4 +30,33 @@
   margin-top: 15px;
   border-radius: 15px;
   background-color: #2a6fdb;
+}
+
+.block
+{
+  width: 300px;
+  height: 20px;
+}
+
+#date
+{
+ font-size: 20px;
+}
+
+#gender
+{
+  margin-left: 0%;
+  font-size: 20px;
+}
+
+#sex
+{
+  width: 150px;
+  height: 20px;
+}
+
+#birth
+{
+  width: 150px;
+  height: 20px;
 }
