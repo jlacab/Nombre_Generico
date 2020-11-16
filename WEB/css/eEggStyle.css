@@ -1,5 +1,4 @@
 #nota{
-  margin 1%;
   border: #274f99 10px solid;
   float: left;
   font-size: 165px;
@@ -25,4 +24,7 @@
 .baba{
   height: 500px;
   width: 500px;
+}
+#thank{
+  color: magenta;
 }
