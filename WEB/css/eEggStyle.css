@@ -1,0 +1,19 @@
+#nota{
+  margin 1%;
+  border: #274f99 10px solid;
+  float: left;
+  font-size: 165px;
+  height: 5%;
+  padding: 5%;
+  margin: 1%;
+  text-decoration: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 25px;
+  background: black;
+}
+#pregunta{
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 2%;
+}
