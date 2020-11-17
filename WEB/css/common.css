@@ -22,7 +22,10 @@ body
 {
   background-color: #242e42;
 }
-
+h2
+{
+  color: #274f99;
+}
 .logo
 {
   width: 100px;
@@ -36,11 +39,9 @@ body
 #header
 {
 }
-
 #body{
   color:black;
 }
-
 #menu{
   background-color: #2f3b52;
   position: relative;
@@ -74,25 +75,19 @@ body
   display:none;
 }
 #menu li:hover>ul{
+  animation: animacion cubic-bezier(.45,.05,.55,.95) 1s;
+  animation-fill-mode: forwards;
   top:48px;
   left:-3px;
   background-color: #2f3b52;
   display:block;
   position:absolute;
   border: black 3px solid;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
   border-top: #2f3b52 3px solid;
 }
 #menu .active{
   background-color: #2a6fdb;
 }
-
-h2
-{
-  color: #274f99;
-}
-
 #foot
 {
   background-color: #a6abb3;
@@ -127,4 +122,8 @@ h2
 #finLista{
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
+}
+@keyframes animacion {
+  from {top: 0px; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;}
+  to {top: 47px; border-bottom-left-radius: 25px; border-bottom-right-radius: 25px;}
 }
