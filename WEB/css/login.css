@@ -1,6 +1,6 @@
 .sign
 {
-  height: 700px;
+  height: 370px;
   text-align: center;
   font-size: 28px;
 }
@@ -31,7 +31,7 @@ h3
   background-color: #2a6fdb;
 }
 
-#login1
-{
-  margin-left: 8px;
+#title{
+  font-size: 50px;
+  padding: 2%;
 }

@@ -5,14 +5,16 @@
   color: #cbecff !important;
 }
 
-#title
-{
+#title{
   font-size: 50px;
+  padding: 2%;
 }
 
 #img
 {
-  height: 200px;
-  width: 200px;
   border-radius: 100px;
+}
+#text{
+
+  padding-bottom: 2%;
 }

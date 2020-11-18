@@ -39,7 +39,7 @@ button
 
 #trollbutton
 {
-  height: 140px;
+  height: 55px;
   font-size: 35px;
   margin-left: -50px;
 }
@@ -48,4 +48,11 @@ button
 {
   text-align: center;
   color: #cbecff;
+}
+#capbingo{
+  padding: 3%;
+}
+#title{
+  font-size: 50px;
+  padding: 2%;
 }
