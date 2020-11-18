@@ -23,6 +23,8 @@ ul.slider li img
   display: block;
   height: 375px;
   width: 562px;
+  border: #242e42 solid 5px;
+  border-radius: 17%;
 }
 
 ul.slider li::after
