@@ -16,7 +16,10 @@
 
 #img
 {
+  width: 250px;
+  height: 200px;
   border-radius: 100px;
+  margin-top: 20px;
 }
 
 #link
