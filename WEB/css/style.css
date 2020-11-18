@@ -53,3 +53,22 @@ ul.slider li:hover:after
 {
   width: 100%;
 }
+
+#informacion
+{
+  margin-top: 20px;
+  font-family: 'Ubuntu', sans-serif;
+  color: #cbecff;
+  font-size: 20px;
+  margin-left: 15px;
+  margin-right: 15px;
+  text-align: center;
+}
+
+h3
+{
+  font-size: 30px;
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+  color: #274f99;
+}
